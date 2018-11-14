@@ -12,10 +12,21 @@
 div.menu {
     padding: 20px;
     text-align: center;
+    position:fixed;
+    display:flex;
+    justify-content:space-around;
+   width: 100%;
+    background-color:black;
+    color:white;
+    z-index:2;
 }
 
-div.menu .kafelek:hover {
+div.menu a {text-decoration:none;
+color:white;}
+
+div.menu .kafelek a:hover {
     background-color: rgba(83, 94, 132, 0.06);
+    color:yellow;
 }
 
 /*pierwsze zdjęcie w tle, góry*/
@@ -116,6 +127,7 @@ div.third_section div.obraz img:hover {
 
 .galeria .container {max-width:100%;
     padding:0;
+    margin:5px;
    }
 
 
@@ -124,6 +136,7 @@ div.third_section div.obraz img:hover {
     height: 70vh;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    grid-gap:5px;
 }
 
 .element {
